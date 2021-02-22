@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(250,249,243);
+}
+
+header {
+    font-weight: 700;
+    text-align: center;
+}
+
+#hName {
+    font-family: 'Courier New', Courier, monospace ;
+    display: inline;
+    box-align: center;
+}
+
+#hCaption {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.topNav {
+    background-color: rgb(63,138,148);
+}
+
+.navRibbon {
+    display: inline-flex;
+    box-sizing: content-box;
+    text-align: right;
+        
+}
+
+.navButton {
+    padding-inline-end: 2em;
+    color: rgb(239,239,204);
+    list-style-type: none;
+}
+
+#indexImg {
+    width: 50%;
+    height: 50%;
+}
