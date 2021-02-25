@@ -1,42 +1,186 @@
 body {
     background-color: rgb(250,249,243);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
+    font-size: x-large;
 }
 
 #hName {
-    font-family: 'Courier New', Courier, monospace ;
-    display: inline;
-    box-align: center;
+    text-align: center;
+    padding: 0px;
+    color: rgb(15, 72, 80);
 }
 
 #hCaption {
     font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
+    font-weight: 550;
+    font-size: x-large;
 }
 
 .topNav {
     background-color: rgb(63,138,148);
+    display: flex;
+    font-size: medium;
+    justify-content: flex-end;
 }
 
-.navRibbon {
-    display: inline-flex;
-    box-sizing: content-box;
-    text-align: right;
-        
-}
-
-.navButton {
-    padding-inline-end: 2em;
-    color: rgb(239,239,204);
+ul {
     list-style-type: none;
 }
 
-#indexImg {
+.navRibbon {
+    margin-right: 20px;
+}    
+
+.navRibbon li, a {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(250,249,243);
+    text-decoration-line: none;
+}
+ 
+.mainContent {
+    display: flex;
+}
+
+.shelfContent {
+    display: block;
+}
+
+#indexImg, .myArticle {
+    flex-direction: column;
     width: 50%;
-    height: 50%;
+    padding: 10px;
+    margin: 25px;
+}
+
+#img1 {
+    align-items: center;
+    max-width: 100%;
+}
+
+.aQuote p {
+    font-size: 35px;
+    font-family: cursive;
+    text-align: center;
+    font-style: oblique;
+    color: salmon;
+    margin: 0px;
+}
+
+.shelfRow {
+    padding: 15px;
+    margin: 5px;
+    display:flex;
+    box-shadow: 2px slategrey;
+    flex-direction: row;
+}
+
+.bookStack {
+    width: 200px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    border: 0.2px solid black;
+    border-radius: 2px;
+    margin: 10px;
+    background-color: rgb(255, 223, 220);
+}
+
+.book {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;;
+}
+
+.book img {
+    object-fit: fill;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.bookStack h4 {
+    font-weight: 300px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 100;
+}
+
+.favList {
+    display: flex;
+    flex-direction: column;
+}
+
+.favList h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: darksalmon;
+}
+
+.abtBook {
+    display: flex;
+    justify-content: center;
+}
+
+.abtBook .bookStack {
+    margin-left: 25px;
+}
+
+.myReview {
+    text-align: justify;
+}
+
+.bookReview {
+    width: 60em;
+    margin-left: 25px;
+}
+
+.author {
+    border-left: 3px solid black;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+/* .auImg {
+    width: 20px;
+    height: 20px;
+}
+
+.auImg img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: fill;
+    margin: auto;
+}*/
+
+.genre {
+    border-left: 3px solid black;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+.myRating {
+    border-left: 3px solid black;
+    margin: 10px;
+    padding-left: 15px;
+}
+
+.material-icons {
+    color: rgb(221, 181, 0);
+}
+
+.footNote {
+    text-align: center;
+    background-color:rgb(15, 72, 80);
+    color: white;
+    padding: 10px;;
 }
